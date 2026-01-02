@@ -1,0 +1,20 @@
+.kpi-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.kpi-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.kpi-value {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}

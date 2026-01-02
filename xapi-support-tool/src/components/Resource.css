@@ -1,0 +1,41 @@
+.resource-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.resource-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-color: #3498db;
+}
+
+.resource-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.resource-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-type {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}
+
+.resource-title {
+  margin: 0.25rem 0 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50;
+}

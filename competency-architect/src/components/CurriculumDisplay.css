@@ -1,0 +1,28 @@
+.curriculum-display {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.curriculum-content {
+  background-color: #282828; /* Darker background for content */
+  border: 1px solid #555; /* Darker border */
+  padding: 20px;
+  border-radius: 5px;
+  color: #f0f0f0; /* Light text for readability */
+}
+
+.curriculum-content h1,
+.curriculum-content h2,
+.curriculum-content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.curriculum-content ul,
+.curriculum-content ol {
+  padding-left: 20px;
+}
+
+.curriculum-content li {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 2rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.chart-section {
+  grid-column: span 4;
+}
+
+.table-section {
+  grid-column: span 4;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .chart-section, .table-section {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .chart-section, .table-section {
+    grid-column: span 1;
+  }
+}
