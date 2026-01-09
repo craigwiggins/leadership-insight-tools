@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIT | Leadership Insight Tools</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #1557b0;
+            --bg: #f8f9fa;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #dadce0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--primary);
+            font-weight: 300;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #eee;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: var(--text-secondary);
+            flex-grow: 1;
+        }
+
+        .tag-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f0fe;
+            color: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            main { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Leadership Insight Tools (LIT)</h1>
+        <p>A portfolio exploring AI, Analytics, and Performance Support in Executive Education</p>
+    </header>
+
+    <main>
+        <!-- Tool 1 -->
+        <div class="card">
+            <div class="tag-container">
+                <span class="tag">AI</span>
+                <span class="tag">Strategy</span>
+            </div>
+            <h2>AI Competency Architect</h2>
+            <p>Leverage Gemini AI to generate personalized, multi-week learning paths based on executive competency models. Includes instructional design justifications for every recommendation.</p>
+            <a href="https://competency-architect.yourdomain.com" class="btn">Launch Architect</a>
+        </div>
+
+        <!-- Tool 2 -->
+        <div class="card">
+            <div class="tag-container">
+                <span class="tag">Analytics</span>
+                <span class="tag">Data Viz</span>
+            </div>
+            <h2>Executive Dashboard</h2>
+            <p>Visualize the business impact of leadership development. Connects LRS data to KPIs like ROI, competency gains, and pipeline impact for C-suite decision-makers.</p>
+            <a href="https://analytics-dashboard.yourdomain.com" class="btn">View Dashboard</a>
+        </div>
+
+        <!-- Tool 3 -->
+        <div class="card">
+            <div class="tag-container">
+                <span class="tag">xAPI</span>
+                <span class="tag">Workflow</span>
+            </div>
+            <h2>xAPI Performance Support</h2>
+            <p>A "just-in-time" support tool that tracks real-time workflow behavior via xAPI and dynamically delivers contextual resources to improve task performance.</p>
+            <a href="https://xapi-support-tool.yourdomain.com" class="btn">Explore Tool</a>
+        </div>
+    </main>
+
+    <footer>
+        Developed by Craig Wiggins &bull; 2026
+    </footer>
+
+</body>
+</html>
